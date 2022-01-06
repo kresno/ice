@@ -93,6 +93,9 @@
                         <li class="nav-item">
                             <a href="/proyekspm" class="nav-link">Proyek SPM</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="/sepengki" class="nav-link">Sepengki</a>
+                        </li>
                     </ul>
                 </div>
             </li>

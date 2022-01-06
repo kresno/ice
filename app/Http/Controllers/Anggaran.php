@@ -3,25 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-use App\Models\Program;
-use App\Models\Kegiatan;
-use App\Models\SubKegiatan;
-
-class KegiatanController extends Controller
+class Anggaran extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() 
+    public function index()
     {
         //
-        $items = DB::table('kegiatan')->select('kode', 'nama')->get();
-
-        return view('kegiatan.index', compact('items'));
     }
 
     /**
@@ -32,10 +24,6 @@ class KegiatanController extends Controller
     public function create()
     {
         //
-        $subkegiatan    = SubKegiatan::pluck('nama', 'id');
-        $program        = Program::pluck('nama', 'id');
-        // $opd            = Opd::pluck('nama', 'id');
-        return view('kegiatan.create', compact('program', 'subkegiatan'));
     }
 
     /**

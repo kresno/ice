@@ -63,3 +63,7 @@ Route::resource('sasaran', SasaranController::class);
 Route::resource('proyekprioritas', ProyekPrioritasController::class);
 Route::resource('proyekspm', ProyekSpmController::class);
 
+
+Route::get('/place/data', 'PlaceController@places')->name('place.data');
+
+
